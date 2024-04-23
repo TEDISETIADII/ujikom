@@ -88,48 +88,23 @@
                                         <path d="M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z" id="path-4"></path>
                                         <path d="M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z" id="path-5"></path>
                                     </defs>
-                                    <g id="g-app-brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Brand-Logo" transform="translate(-27.000000, -15.000000)">
-                                            <g id="Icon" transform="translate(27.000000, 15.000000)">
-                                                <g id="Mask" transform="translate(0.000000, 8.000000)">
-                                                    <mask id="mask-2" fill="white">
-                                                        <use xlink:href="#path-1"></use>
-                                                    </mask>
-                                                    <use fill="#696cff" xlink:href="#path-1"></use>
-                                                    <g id="Path-3" mask="url(#mask-2)">
-                                                        <use fill="#696cff" xlink:href="#path-3"></use>
-                                                        <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-3"></use>
-                                                    </g>
-                                                    <g id="Path-4" mask="url(#mask-2)">
-                                                        <use fill="#696cff" xlink:href="#path-4"></use>
-                                                        <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-4"></use>
-                                                    </g>
-                                                </g>
-                                                <g id="Triangle" transform="translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) ">
-                                                    <use fill="#696cff" xlink:href="#path-5"></use>
-                                                    <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-5"></use>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
                                 </svg>
                             </span>
-                            <span class="app-brand-text demo text-body fw-bolder">Sneat</span>
                         </a>
                     </div>
                     <!-- /Logo -->
-                    <h4 class="mb-2">Welcome to Sneat! 👋</h4>
-                    <p class="mb-4">Please sign-in to your account and start the adventure</p>
+                    <h4 class="mb-2">Selamat datang Di Laundry! 👋</h4>
+                    <p class="mb-4">SMKN 1 CIAMIS</p>
 
                     <form id="formAuthentication" class="mb-3" method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="mb-3">
-                            <label for="email" class="form-label">{{ __('Email Address') }}</label>
+                            <label for="email" class="form-label">{{ __('Email') }}</label>
                             <input type="text" class="form-control" id="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
                         </div>
                         <div class="mb-3 form-password-toggle">
                             <div class="d-flex justify-content-between" >
-                                <label class="form-label" for="password">Password</label>
+                                <label class="form-label" for="password">Kata Sandi</label>
                             </div>
                             <div class="input-group input-group-merge">
                                 <input type="password" id="password" class="form-control" name="password" required autocomplete="current-password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
@@ -137,7 +112,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+                            <button class="btn btn-primary d-grid w-100" type="submit">Masuk</button>
                         </div>
                     </form>
 
@@ -150,9 +125,5 @@
 </div>
 
 <!-- / Content -->
-
-<div class="buy-now">
-    <a href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/" target="_blank" class="btn btn-danger btn-buy-now">Upgrade to Pro</a>
-</div>
 
 @endsection
