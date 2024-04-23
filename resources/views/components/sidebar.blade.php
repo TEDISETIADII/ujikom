@@ -74,7 +74,7 @@
             <li class="menu-item {{ request()->is('transaksi') ? 'active' : '' }}">
               <a href="{{route('transaksi')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Transaksi</div>
+                <div data-i18n="Analytics">Transakgsi</div>
               </a>
             </li>
             @if(auth()->user()->role == 'Admin')
